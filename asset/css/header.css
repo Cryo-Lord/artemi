@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+/*Colocaremos los estilos del header. que seria nuestas presentacion y tendria un menu*/
+
+header .header-contenedor{
+    width: 100%;
+    height: auto;
+}
+
+header .header-titulo--contenedor{
+    width:100%;
+    height: 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;       
+}
+
+
+/* colocamos los estilos del navegador */
+
+header .header-navegador--container{
+    width:100%;
+    height: 26px;
+
+    background-color:#2f2f2f;
+}
+
+header .header-navegador{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    background-color: #9a15ff;
+    
+}
+
+header .header-navegador li{
+    list-style:none;
+    margin:auto 5px;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.8rem;
+    
+}
+
+header .header-navegador a{
+   text-decoration:none;
+   color: white;
+}
+
+header .header-navegador li::after{
+    content:"|";
+}
+
+header .header-navegador li:hover{
+    font-size: 2.5rem;
+}
