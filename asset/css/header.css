@@ -10,58 +10,77 @@ html{
 
 /*Colocaremos los estilos del header. que seria nuestas presentacion y tendria un menu*/
 
-header .header-contenedor{
+.contenedor{
     width: 100%;
-    height: auto;
+    height: 40%;
+    padding: 50px;
+    background-color: #290238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header .header-titulo--contenedor{
-    width:100%;
-    height: 100px;
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: center;       
+header .canvaIz{
+    width: 50%;
+    height: 50%;
+    display: flex; 
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+
+header .logo {
+    padding: auto;
+}
+
+header .logo img{
+    width: 600px;
+    height: 180px;
+
 }
 
 
 /* colocamos los estilos del navegador */
 
-header .header-navegador--container{
-    width:100%;
-    height: 26px;
-
-    background-color:#2f2f2f;
+.canvaDr{
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
 }
 
-header .header-navegador{
+.header-navegador{
     width: 100%;
-    height: 30px;
+    height: 100px;
     display: flex;
-    flex-direction:row;
-    justify-content:center;
-    background-color: #9a15ff;
+    align-items: center;
     
 }
 
 header .header-navegador li{
     list-style:none;
-    margin:auto 5px;
-    margin-left: 10px;
+    margin: auto; 
+    padding: 20px;
     color: white;
-    font-size: 1.8rem;
     
 }
 
 header .header-navegador a{
    text-decoration:none;
-   color: white;
+   color: rgb(255, 255, 255);
+   font-size: 5.8rem;
+   margin: 50px;
 }
 
-header .header-navegador li::after{
-    content:"|";
-}
 
 header .header-navegador li:hover{
-    font-size: 2.5rem;
+    margin: 20px;
+    padding: 10px;
+    border: rgba(192, 192, 192, 0.651) solid 3px;
+    background-color: rgb(72, 37, 105);
+    border-radius: 20px;
+    
 }

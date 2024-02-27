@@ -7,10 +7,11 @@
 
 html{
     font-size:62.5%;
+    background-color: rgb(26, 0, 27);
 }
 
 /*PLANTILLA HEADER*/
 .header{
     width: 100%  !important;
-    height: 130px !important;
+    height: 362px  !important;
 }
