@@ -1,0 +1,56 @@
+.text-conforta {
+  font-family: serif;
+}
+
+.text-serif {
+  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.bg-pink {
+  background-color: #FF6BEC;
+}
+
+.bg-blue {
+  background-color: #16A7CD;
+}
+
+.bg-darkPurple {
+  background-color: #35014D;
+}
+
+.bg-purple {
+  background-color: #6F0FDB;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.color-pink {
+  color: #FF6BEC
+}
+
+.color-blue {
+  color: #16A7CD
+}
+
+.color-purple {
+  color: #6F0FDB
+}
+
+.color-darkPurple {
+  color: #35014D
+}
+
+.color-white {
+  color: #FFFFFF
+}
+
+.color-black {
+  color: #000000
+}
