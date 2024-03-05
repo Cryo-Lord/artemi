@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Pestañas from './Components/categories';
+import Dummy from "./Components/test";
+import React from 'react';
+import './assets/css/bootstrap.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+  return(
+    <div>
+      <header className='bg-galaxy'>
+        <img src='logoB.png' alt="Imagen que deberian haberme pasado." height="100"/>
       </header>
+        <nav>
+          <div className="nav nav-tabs bg-void" role="tablist" id='Categorias'>
+            <Pestañas />
+          </div>
+        </nav>
+      <body>
+        <div className="tab-content" id="Contenido_Categorias">
+            <Dummy />
+        </div>
+      </body>
     </div>
-  );
+  )
 }
 
 export default App;
