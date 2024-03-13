@@ -1,3 +1,4 @@
+/*Reiniciar los estilos bases de la pagina*/
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ html{
     font-size:62.5%;
 }
 
-/*Colocaremos los estilos del header. que seria nuestas presentacion y tendria un menu*/
+/*ESTILOS Header*/
 
 .contenedor{
     width: 100%;
