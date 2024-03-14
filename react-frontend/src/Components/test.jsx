@@ -7,7 +7,7 @@ function InterDummy(props){
     const [uniData, setUniData] = useState([{}])
 
     useEffect(()=>{
-        fetch("/api/Marketing").then(
+        fetch("/api/servicio").then(
             res => res.json()
         ).then(
             data => { setUniData(data) }
@@ -24,7 +24,7 @@ function InterDummy(props){
             <div className="card-body text-galaxy">
                 No se pudo encontrar los datos de: {ingreso}
                 <hr />
-                <p />Resultado: {uniData.ingreso}
+                <p />Resultado: {uniData[ingreso]}
             </div>
         </div>
     ):(
@@ -66,36 +66,23 @@ function Dummy() {
             (
                 <div className="tab-pane fade show active" id="undefined" role="tabpanel" aria-labelledby="undefined-tab"> undefined </div>
             ): (
-                dummiesData.servicios.map((servicio, i) => (
-                    (servicio == "Home")?(
-                    <div className="tab-pane fade show active" id={servicio} role="tabpanel" aria-labelledby={servicio+"-tab"}> 
-                        <div className="card m-4">
-                            <div className="h1 card-header bg-galaxy text-sparkle text-center">
-                                ¡Bienvenido a Artemi Studios!
-                            </div>
-                            <div className="card-body text-galaxy">
-                                Texto largo
-                            </div>
-                        </div>
-                    </div>
-                ):((servicio == "Sobre nosotros")?(
-                    <div className="tab-pane fade" id={servicio} role="tabpanel" aria-labelledby={servicio+"-tab"}> 
-                        <div className="card m-3">
-                            <div className="card-header bg-void text-sparkle">
-                                {servicio}
-                            </div>
-                            <div className="card-body bg-galaxy text-sparkle">
-                                Somos una empresa dedicada a propocionar de servicios de diseño y soluciones digitales
-                            </div>
-                        </div>
-                    </div>
-                    ):(
-                        <div className="tab-pane fade" id={servicio} role="tabpanel" aria-labelledby={servicio+"-tab"}> 
-                            <InterDummy categoria={servicio} /> 
-                        </div>
-                    )
-                    )
-                ))
+            dummiesData.servicios.map((servicio, i) => (
+                (servicio === "Marketing")?(
+                <div className="tab-pane fade show active" id={"nav-"+servicio} role="tabpanel" aria-labelledby={"nav-"+servicio+"-tab"}> 
+                    <InterDummy categoria={servicio} />
+                </div>
+                ):(
+                <div className="tab-pane fade" id={"nav-"+servicio} role="tabpanel" aria-labelledby={"nav-"+servicio+"-tab"} tabindex="0"> 
+                    <InterDummy categoria={servicio} /> 
+                </div>
+                )))
+                /*</nav>
+                  <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+                  </div>*/
             )}
         </div>
     )

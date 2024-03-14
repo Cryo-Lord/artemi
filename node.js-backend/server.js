@@ -6,10 +6,10 @@ app.get("", (req,res) => {
 })
 
 app.get("/api/", (req,res) => {
-    res.json({"servicios": ["Home","Marketing", "Diseño", "Web", "Edición", "Contaduria", "Sobre nosotros"], "datos":["patata","zanahoria","mermelada"]})
+    res.json({"servicios": ["Marketing", "Diseño", "Web", "Edición", "Contaduria"], "datos":["patata","zanahoria","mermelada"]})
 })
 
-app.get("/api/:servicio", (req, res) => {
+app.get("/api/servicio", (req, res) => {
 
     res.json({"Marketing":["Administración de redes sociales", "Creación de marca (estudio de mercado y branding)", 
     "Analista de marketing digital", "Diseño de correos profesionales"],

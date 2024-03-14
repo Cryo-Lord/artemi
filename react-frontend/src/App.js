@@ -6,16 +6,13 @@ import './assets/css/bootstrap.css';
 function App() {
   return(
     <div>
-      <header className='bg-galaxy'>
-        <img src='logoB.png' alt="Imagen que deberian haberme pasado." height="100"/>
-      </header>
+      <body>
         <nav>
-          <div className="nav nav-tabs bg-void" role="tablist" id='Categorias'>
+          <div className="nav nav-tabs bg-void justify-content-center" role="tablist" id='nav-tab'>
             <Pestañas />
           </div>
         </nav>
-      <body>
-        <div className="tab-content" id="Contenido_Categorias">
+        <div className="tab-content" id="nav-tabContent">
             <Dummy />
         </div>
       </body>
